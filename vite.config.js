@@ -8,5 +8,5 @@ import react from "@vitejs/plugin-react";
 // leave base as "/".
 export default defineConfig({
   plugins: [react()],
-  base: "/Tejas",
+  base: "/portfolio/",
 });
