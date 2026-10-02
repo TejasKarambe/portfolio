@@ -85,7 +85,7 @@ export function Navbar({
         {/* Center Nav Links */}
         <div className="hidden md:flex items-center gap-1 text-xs">
           {[
-            { href: "#projects", label: "Projects (15)" },
+            // { href: "#projects", label: "Projects (15)" },
             { href: "#games", label: "Arcade Games" },
             { href: "#tools", label: "Dev Tools" },
             { href: "#skills", label: "Skills Radar" },
@@ -164,7 +164,7 @@ export function Navbar({
         <div className="md:hidden mt-2 glass rounded-2xl p-4 border border-white/10 shadow-2xl animate-in fade-in slide-in-from-top-2 duration-200">
           <div className="flex flex-col gap-2 text-sm font-medium">
             {[
-              { href: "#projects", label: "Projects (15 Production & Prototypes)" },
+              // { href: "#projects", label: "Projects (15 Production & Prototypes)" },
               { href: "#games", label: "Arcade Games (Snake, Typer, Memory)" },
               { href: "#tools", label: "Dev Tools (Calculator & Converter)" },
               { href: "#skills", label: "Skills Radar & Tech Matrix" },
