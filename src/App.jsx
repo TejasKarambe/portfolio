@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Navbar } from "./components/Navbar";
 import { InteractiveBackground } from "./components/InteractiveBackground";
 import { HeroSection } from "./components/HeroSection";
-import { ProjectsSection } from "./components/ProjectsSection";
 import { ProjectModal } from "./components/projects/ProjectModal";
 import { MiniGamesSection } from "./components/MiniGamesSection";
 import { MiniAppsSection } from "./components/MiniAppsSection";
@@ -83,7 +82,7 @@ export default function App() {
         />
 
         {/* 15 Projects Section with Live Filter and Sandboxes */}
-        <ProjectsSection onOpenProject={(proj) => setSelectedProject(proj)} />
+        {/* <ProjectsSection onOpenProject={(proj) => setSelectedProject(proj)} /> */}
 
         {/* Visitor Arcade with Cyber Snake, Code Typer, and Memory Matrix */}
         <MiniGamesSection />

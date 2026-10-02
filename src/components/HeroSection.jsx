@@ -80,13 +80,13 @@ export function HeroSection({ visitorName, onOpenTerminal, onOpenCookies }) {
 
       {/* Primary Action Buttons */}
       <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-        <a
+        {/* <a
           href="#projects"
           onClick={() => playClickSound()}
           className="flex items-center gap-2 rounded-xl bg-gradient-to-r from-violet-glow to-cyan-glow px-6 py-3 text-sm font-bold text-slate-950 shadow-xl shadow-cyan-glow/20 transition-all hover:scale-105 active:scale-95"
         >
           Explore 15 Projects <ArrowRight className="h-4 w-4" />
-        </a>
+        </a> */}
 
         <a
           href="#games"
