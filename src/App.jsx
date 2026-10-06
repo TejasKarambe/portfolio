@@ -85,19 +85,21 @@ export default function App() {
         {/* <ProjectsSection onOpenProject={(proj) => setSelectedProject(proj)} /> */}
 
         {/* Visitor Arcade with Cyber Snake, Code Typer, and Memory Matrix */}
-        <MiniGamesSection />
-
-        {/* Dev Tools Deck: Dev Calculator with Tape, Unit Converter, Terminal CLI */}
-        <MiniAppsSection
-          onSelectProject={(proj) => setSelectedProject(proj)}
-          onSelectTheme={(t) => setTheme(t)}
-        />
+      
 
         {/* Skills Radar & Architecture Matrix */}
         <SkillsSection />
 
         {/* Experience Timeline (SDC ERP Modules) & Education */}
         <ExperienceEducation />
+
+          <MiniGamesSection />
+
+        {/* Dev Tools Deck: Dev Calculator with Tape, Unit Converter, Terminal CLI */}
+        <MiniAppsSection
+          onSelectProject={(proj) => setSelectedProject(proj)}
+          onSelectTheme={(t) => setTheme(t)}
+        />
 
         {/* Direct Contact & Email Dispatcher */}
         <ContactSection />
