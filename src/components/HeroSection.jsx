@@ -74,19 +74,19 @@ export function HeroSection({ visitorName, onOpenTerminal, onOpenCookies }) {
       {/* Personalization Greeting */}
       {visitorName && (
         <div className="mt-4 inline-block rounded-xl bg-violet-500/10 border border-violet-500/20 px-3.5 py-1 text-xs text-violet-300 font-mono">
-          👋 Welcome to my digital portfolio, <strong>{visitorName}</strong>! Enjoy the live sandboxes and games below.
+          👋 Welcome to my digital portfolio, <strong>{visitorName}</strong>! Explore my projects and tools below.
         </div>
       )}
 
       {/* Primary Action Buttons */}
       <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-        {/* <a
+         <a
           href="#projects"
           onClick={() => playClickSound()}
           className="flex items-center gap-2 rounded-xl bg-gradient-to-r from-violet-glow to-cyan-glow px-6 py-3 text-sm font-bold text-slate-950 shadow-xl shadow-cyan-glow/20 transition-all hover:scale-105 active:scale-95"
         >
-          Explore 15 Projects <ArrowRight className="h-4 w-4" />
-        </a> */}
+          Explore Projects <ArrowRight className="h-4 w-4" />
+        </a>
 
         <a
           href="#games"

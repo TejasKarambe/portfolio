@@ -94,7 +94,7 @@ export function CookieVaultModal({ isOpen, onClose, onNameChange }) {
             </div>
             Because this portfolio is hosted directly on GitHub Pages with zero backend servers,
             it uses <strong>HTTP Document Cookies & LocalStorage</strong> to persist your preferences,
-            arcade high-scores, calculation history tape, and bookmarked projects in your local browser sandbox.
+            arcade high-scores, calculation history tape, and bookmarked projects in your browser.
             No personal data ever leaves your device.
           </div>
 

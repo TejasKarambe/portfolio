@@ -13,6 +13,7 @@ import { CookieVaultModal } from "./components/cookies/CookieVaultModal";
 import { getCookie, setCookie } from "./lib/cookies";
 import { playClickSound } from "./lib/sound";
 import { Cookie, Terminal, Volume2, VolumeX, ArrowUp } from "lucide-react";
+import { ProjectsSection } from "./components/ProjectsSection";
 
 export default function App() {
   const [theme, setTheme] = useState(() => getCookie("theme", "cyber"));
@@ -81,8 +82,8 @@ export default function App() {
           }}
         />
 
-        {/* 15 Projects Section with Live Filter and Sandboxes */}
-        {/* <ProjectsSection onOpenProject={(proj) => setSelectedProject(proj)} /> */}
+        {/* Selected projects */}
+        <ProjectsSection onOpenProject={(proj) => setSelectedProject(proj)} />
 
         {/* Visitor Arcade with Cyber Snake, Code Typer, and Memory Matrix */}
       
@@ -116,7 +117,7 @@ export default function App() {
         }}
       />
 
-      {/* Project Sandbox Modal */}
+      {/* Project Details Modal */}
       {selectedProject && (
         <ProjectModal
           project={selectedProject}

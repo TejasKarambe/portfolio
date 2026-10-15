@@ -48,7 +48,7 @@ export function Footer({ onOpenCookies, onOpenTerminal }) {
       </div>
 
       <div className="max-w-6xl mx-auto mt-6 pt-6 border-t border-white/[0.05] text-center text-[10px] text-muted/60">
-        © {new Date().getFullYear()} {profile.name}. All project sandboxes and high-scores run client-side.
+        © {new Date().getFullYear()} {profile.name}. Thanks for visiting my portfolio.
       </div>
     </footer>
   );
