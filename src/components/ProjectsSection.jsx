@@ -172,16 +172,43 @@ export function ProjectsSection({ onOpenProject }) {
                     ))}
                   </div>
 
-                  <div className="flex items-center gap-3 text-xs pt-1">
-                    <a
-                      href={project.githubUrl}
-                      target="_blank"
-                      rel="noreferrer"
-                      onClick={(e) => e.stopPropagation()}
-                      className="inline-flex items-center gap-1.5 text-cyan-glow font-semibold text-[11px] hover:text-cyan-300"
-                    >
-                      <Github className="h-3.5 w-3.5" /> GitHub
-                    </a>
+                  <div className="flex items-center gap-3 text-xs pt-1 flex-wrap">
+                    {project.githubFrontendUrl ? (
+                      <>
+                        <a
+                          href={project.githubFrontendUrl}
+                          target="_blank"
+                          rel="noreferrer"
+                          onClick={(e) => e.stopPropagation()}
+                          className="inline-flex items-center gap-1.5 text-cyan-glow font-semibold text-[11px] hover:text-cyan-300"
+                          title="Frontend Repository"
+                        >
+                          <Github className="h-3.5 w-3.5" /> Frontend
+                        </a>
+                        <a
+                          href={project.githubBackendUrl}
+                          target="_blank"
+                          rel="noreferrer"
+                          onClick={(e) => e.stopPropagation()}
+                          className="inline-flex items-center gap-1.5 text-cyan-glow font-semibold text-[11px] hover:text-cyan-300"
+                          title="Backend Repository"
+                        >
+                          <Github className="h-3.5 w-3.5" /> Backend
+                        </a>
+                      </>
+                    ) : (
+                      project.githubUrl && (
+                        <a
+                          href={project.githubUrl}
+                          target="_blank"
+                          rel="noreferrer"
+                          onClick={(e) => e.stopPropagation()}
+                          className="inline-flex items-center gap-1.5 text-cyan-glow font-semibold text-[11px] hover:text-cyan-300"
+                        >
+                          <Github className="h-3.5 w-3.5" /> GitHub
+                        </a>
+                      )
+                    )}
                     {project.demoUrl && (
                       <a
                         href={project.demoUrl}

@@ -56,11 +56,11 @@ export const experience = [
 
 export const projects = [
   {
-    name: "Finance API Service",
+    name: "ApexFinance (Full Stack Wealth & Budget Engine)",
     description:
-      "A personal finance management REST API built from scratch — layered architecture, transactional balance logic for income/expense/transfer, and centralized exception handling.",
-    stack: ["Java 21", "Spring Boot", "Spring Data JPA", "MySQL", "Swagger/OpenAPI"],
-    link: "https://github.com/TejasKarambe/finance",
+      "A production-grade full-stack personal finance and wealth management platform with multi-account tracking, zero-sum transfers, category budgeting with 80% proactive alerts, and cash flow analytics.",
+    stack: ["React", "Spring Boot", "Java 21", "PostgreSQL", "Spring Security", "JWT", "Tailwind CSS"],
+    link: "https://apex-finance-lilac.vercel.app/",
   },
   {
     name: "University & College ERP Systems",

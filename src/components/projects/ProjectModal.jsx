@@ -135,15 +135,36 @@ export function ProjectModal({ project, onClose }) {
                 <ExternalLink className="h-3.5 w-3.5" /> Live Demo
               </a>
             )}
-            {project.githubUrl && (
-              <a
-                href={project.githubUrl}
-                target="_blank"
-                rel="noreferrer"
-                className="flex items-center gap-1.5 rounded-lg bg-white/10 px-3.5 py-1.5 font-semibold text-white hover:bg-white/20 transition-colors"
-              >
-                <Github className="h-3.5 w-3.5" /> GitHub
-              </a>
+            {project.githubFrontendUrl ? (
+              <>
+                <a
+                  href={project.githubFrontendUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center gap-1.5 rounded-lg bg-white/10 px-3.5 py-1.5 font-semibold text-white hover:bg-white/20 transition-colors"
+                >
+                  <Github className="h-3.5 w-3.5" /> Frontend Code
+                </a>
+                <a
+                  href={project.githubBackendUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center gap-1.5 rounded-lg bg-white/10 px-3.5 py-1.5 font-semibold text-white hover:bg-white/20 transition-colors"
+                >
+                  <Github className="h-3.5 w-3.5" /> Backend Code
+                </a>
+              </>
+            ) : (
+              project.githubUrl && (
+                <a
+                  href={project.githubUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center gap-1.5 rounded-lg bg-white/10 px-3.5 py-1.5 font-semibold text-white hover:bg-white/20 transition-colors"
+                >
+                  <Github className="h-3.5 w-3.5" /> GitHub
+                </a>
+              )
             )}
             <button
               onClick={onClose}

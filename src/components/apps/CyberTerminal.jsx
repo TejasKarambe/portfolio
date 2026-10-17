@@ -83,7 +83,7 @@ ERP Systems Built: Examination, Library, Student/Staff, Recruitment ERP`,
           text: projectsList
             .map(
               (p, idx) =>
-                `${idx + 1}. [${p.difficulty}] ${p.title} (${p.concepts.join(", ")})`
+                `${idx + 1}. [${p.category || p.difficulty}] ${p.title} (${p.concepts.join(", ")})`
             )
             .join("\n"),
         });
